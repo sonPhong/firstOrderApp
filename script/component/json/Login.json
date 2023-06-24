@@ -1,0 +1,21 @@
+{
+  "account_member": {
+    "member1": {
+      "id": 1,
+      "name": "Phong",
+      "pass": "member"
+    },
+    "member2": {
+      "id": 2,
+      "name": "Hoai",
+      "pass": "member"
+    }
+  },
+  "account_admin": {
+    "admin1": {
+      "id": 1,
+      "name": "Phong depzai",
+      "pass": "admin123"
+    }
+  }
+}
