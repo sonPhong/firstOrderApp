@@ -1,0 +1,75 @@
+-USER:
+	+ Đăng xuất
+	+ Thông tin cá nhân
+		- Xem thông tin
+		- Thay đổi thông tin
+	+ Đổi mật khẩu
+	+ Chấm công
+	
+-SETTING:
+	+ Ngôn ngữ
+		- Anh
+		- Việt
+		- Trung
+	+ Themes
+		- Sáng
+		- Tối
+		- Tuỳ chọn
+	+ Thông báo
+		- Bât/tắt
+	+ Cài đặt ứng dụng ( chưa rõ chức năng )
+
+-CALLHELP:
+	+ Số điện thoại quản lí
+	+ Sđt nhân viên
+	+ Sđt bảo vệ
+	+ Lịch sử
+
+-NOTI:
+	+ Thông báo mới (tin mới + tin quan trọng)
+	+ Tin cũ
+
+-TABLE:
+	+ Ds bàn trên lầu
+		- Trạng thái bàn ( hư - đã đặt - trống - đang có khách )
+		- Ds món bàn order
+			+ Tình trạng món
+			+ THêm món
+			+ Huỷ
+			+ Thay đổi 
+		- Bill bàn
+		- Thay đổi
+	+ Ds bàn dưới sảnh
+		- Trạng thái bàn
+		- Ds món bàn order
+			+ Tình trạng món
+			+ THêm món
+			+ Huỷ
+			+ Thay đổi 
+		- Bill bàn
+		- Thay đổi
+
+-ORDER:
+	+ Tại quán
+		- Số bàn
+			+ Food
+			+ Drink
+			+ Snacks ( đồ ăn vặt )
+			+ Orther
+	+ Mang về
+		+ Food
+		+ Drink
+		+ Snacks ( đồ ăn vặt )
+		+ Orther
+	+ Đặt trước
+		- Số bàn
+			+ Food
+			+ Drink
+			+ Snacks ( đồ ăn vặt )
+			+ Orther
+
+
+
+
+
+

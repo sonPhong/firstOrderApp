@@ -1,4 +1,4 @@
-import { Component, ReactNode } from "react";
+import { Component, ReactNode, useRef } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
   Text,
@@ -18,6 +18,7 @@ import { Home } from "./Home";
 import { Forgot } from "./Forgot";
 import { Index } from "./Index";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
+import { Tab } from "@rneui/base";
 
 const { account_admin, account_member } = require("../json/Login.json");
 
@@ -28,6 +29,8 @@ type Interface_AccountMember = {
 type Interface_AccountAdmin = {
   account_admin: { id: number; name: string; pass: string };
 };
+
+
 
 export class Login extends Component {
   constructor(props: any) {
@@ -40,6 +43,9 @@ export class Login extends Component {
   };
 
   render() {
+    
+
+
     return (
       <ImageBackground
         style={LOGIN.bgLogin}
@@ -48,8 +54,11 @@ export class Login extends Component {
       >
         <View style={LOGIN.containerLogin}>
           <TextInput
+            //onKeyPress={}
             placeholder="ID"
             style={LOGIN.textInLogin}
+            returnKeyType={'next'}
+            autoFocus = {true}
             textContentType={"oneTimeCode"}
             autoCapitalize={"none"}
             onChangeText={this.onInputId.bind(this)}
