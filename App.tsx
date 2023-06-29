@@ -14,6 +14,8 @@ import { Forgot } from "./script/component/page/Forgot";
 import { Order } from "./script/component/page/Order";
 import { TabsFoot } from "./script/component/page/TabsFoot";
 import { Index } from "./script/component/page/Index";
+import { User } from "./script/component/page/User";
+import { Setting } from "./script/component/page/Setting";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,7 +24,11 @@ export default class App extends Component {
     const Tab = createBottomTabNavigator();
     return (
       <NavigationContainer>
-        <Stack.Navigator>
+        <Stack.Navigator
+          screenOptions={{
+            headerShown: false,
+          }}
+        >
           <Stack.Screen
             name="Login"
             component={Login}
@@ -36,6 +42,8 @@ export default class App extends Component {
           <Stack.Screen name="Index" component={Index} />
           <Stack.Screen name="Forgot" component={Forgot} />
           <Stack.Screen name="Order" component={Order} />
+          <Stack.Screen name="User" component={User} />
+          <Stack.Screen name="Setting" component={Setting} />
         </Stack.Navigator>
       </NavigationContainer>
     );

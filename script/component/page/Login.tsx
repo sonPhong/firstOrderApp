@@ -19,6 +19,8 @@ import { Forgot } from "./Forgot";
 import { Index } from "./Index";
 import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import { Tab } from "@rneui/base";
+import {User} from "./User";
+import { Setting } from "./Setting";
 
 const { account_admin, account_member } = require("../json/Login.json");
 

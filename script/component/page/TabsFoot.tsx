@@ -1,4 +1,4 @@
-import { Text, View,Alert } from "react-native";
+import { Text, View, Alert } from "react-native";
 import React, { Component } from "react";
 
 import { NavigationContainer } from "@react-navigation/native";
@@ -17,7 +17,12 @@ export class TabsFoot extends Component {
   render() {
     const Tab = createBottomTabNavigator();
     return (
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          headerShown: true,
+          // an hien header title
+        }}
+      >
         <Tab.Screen
           name="Home"
           component={Home}
@@ -37,7 +42,6 @@ export class TabsFoot extends Component {
           }}
         />
 
-        
         <Tab.Screen
           name="CallHelp"
           component={CallHelp}
@@ -61,7 +65,6 @@ export class TabsFoot extends Component {
             ),
           }}
         />
-        
       </Tab.Navigator>
     );
   }

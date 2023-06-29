@@ -31,14 +31,14 @@ export const HOME = StyleSheet.create({
     alignItems: "flex-end",
   },
   iconLeftHome: {
-    flex:1,
+    flex: 1,
     //marginHorizontal: 10,
     fontSize: 50,
-    width:'100%',
+    width: "100%",
     fontWeight: "bold",
     alignItems: "center",
     justifyContent: "center",
-    textAlign: 'center'
+    textAlign: "center",
   },
   itemLeftTop: {
     //alignItems: "center",
@@ -297,5 +297,221 @@ export const FORGOT = StyleSheet.create({
     fontSize: 20,
     fontWeight: "bold",
     color: "white",
+  },
+});
+
+//-----------------------------MODAL USER----------------------------------
+export const USERFORM = StyleSheet.create({
+  safeView: {
+    flex: 1,
+    //backgroundColor: 'white',
+  },
+  //-------------TOP----------
+  topUser: {
+    flex: 1,
+    flexDirection: "row",
+    borderWidth: 1,
+    borderColor: "black",
+    borderRadius: 20,
+    backgroundColor: "#CFCFCF",
+  },
+  leftTopUser: {
+    flex: 1,
+    flexDirection: "row",
+  },
+  rightTopUser: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "flex-end",
+  },
+  iconLeftUser: {
+    flex: 1,
+    //marginHorizontal: 10,
+    fontSize: 50,
+    width: "100%",
+    fontWeight: "bold",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+  },
+  itemLeftTop: {
+    //alignItems: "center",
+    justifyContent: "center",
+    marginHorizontal: 10,
+  },
+  textTitleTop: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  textNameTop: {
+    fontSize: 20,
+    //fontWeight: "bold",
+  },
+  iconRightUser: {
+    marginHorizontal: 10,
+    fontSize: 40,
+    fontWeight: "bold",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  //-------------BODY----------
+  bodyUser: {
+    flex: 10,
+  },
+  contaiBody: {
+    flex: 1,
+    paddingHorizontal: 40,
+    alignItems: "baseline",
+  },
+  pressFlex: {
+    flex: 0.2,
+    marginVertical: 50,
+//    alignItems: 'center',
+    //justifyContent: 'center' ,
+   
+  },
+  viewPress: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    //marginLeft: 30,
+    //justifyContent: "center",
+  },
+  textPress: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    paddingLeft: 10,
+    //paddingHorizontal: 10,
+  },
+  //-------------FOOTER----------
+  footUser: {
+    flex: 2,
+  },
+  pressFoot: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  viewPressFoot: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    //marginLeft: 30,
+    //justifyContent: "center",
+  },
+  textPressFoot: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    paddingRight: 10,
+    //paddingHorizontal: 10,
+  },
+});
+
+//-----------------------------MODAL SETTING----------------------------------
+export const SETTINGRFORM = StyleSheet.create({
+  safeView: {
+    flex: 1,
+  },
+  //-------------TOP----------
+  topSett: {
+    flex: 1,
+    flexDirection: "row",
+    borderWidth: 1,
+    borderColor: "black",
+    borderRadius: 20,
+    backgroundColor: "#CFCFCF",
+  },
+  leftTopSett: {
+    flex: 1,
+    flexDirection: "row",
+  },
+  rightTopSett: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "flex-end",
+  },
+  iconLeftSett: {
+    flex: 1,
+    //marginHorizontal: 10,
+    fontSize: 50,
+    width: "100%",
+    fontWeight: "bold",
+    alignItems: "center",
+    justifyContent: "center",
+    textAlign: "center",
+  },
+  itemLeftTop: {
+    //alignItems: "center",
+    justifyContent: "center",
+    marginHorizontal: 10,
+  },
+  textTitleTop: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  textNameTop: {
+    fontSize: 20,
+    //fontWeight: "bold",
+  },
+  iconRightSett: {
+    marginHorizontal: 10,
+    fontSize: 40,
+    fontWeight: "bold",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  //-------------BODY----------
+  bodySett: {
+    flex: 10,
+  },
+  contaiBody: {
+    flex: 1,
+    paddingHorizontal: 40,
+    alignItems: "baseline",
+  },
+  pressFlex: {
+    flex: 0.2,
+    //marginVertical: 50,
+//    alignItems: 'center',
+    //justifyContent: 'center' ,
+   
+  },
+  viewPress: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    //marginLeft: 30,
+    //justifyContent: "center",
+  },
+  textPress: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    paddingLeft: 10,
+    //paddingHorizontal: 10,
+  },
+  //-------------FOOTER----------
+  footSett: {
+    flex: 2,
+  },
+  pressFoot: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  viewPressFoot: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    //marginLeft: 30,
+    //justifyContent: "center",
+  },
+  textPressFoot: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    paddingRight: 10,
+    //paddingHorizontal: 10,
+  },
+  textVer: {
+    fontSize: 20,
+    fontWeight:'bold',
+    textAlign: "center",
   },
 });

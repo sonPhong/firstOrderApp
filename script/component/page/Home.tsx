@@ -10,20 +10,33 @@ import {
   SafeAreaView,
   ScrollView,
   Alert,
+  Modal,
 } from "react-native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
+import { useState } from "react";
 
 import { HOME } from "../../style/StyleSheet";
 import { Order } from "./Order";
 import { Login } from "./Login";
 import { Forgot } from "./Forgot";
 import { TabsFoot } from "./TabsFoot";
+import { User } from "./User";
+import { Setting } from "./Setting";
 
 export class Home extends Component {
+  constructor(props: any) {
+    super(props);
+  }
+
+  state = {
+    isVisibleUser: false,
+    isVisibleSett: false,
+  };
   render() {
     const Tab = createBottomTabNavigator();
+
     return (
       <ImageBackground
         resizeMode="cover"
@@ -39,6 +52,15 @@ export class Home extends Component {
                   size={50}
                   color="black"
                 />
+
+                <Modal
+                  transparent={false}
+                  animationType="fade"
+                  visible={this.state.isVisibleUser}
+                >
+                  <User></User>
+                </Modal>
+                
               </Pressable>
 
               <View style={HOME.itemLeftTop}>
@@ -48,12 +70,19 @@ export class Home extends Component {
             </View>
 
             <View style={HOME.rightTopHome}>
-              <Pressable onPress={this.onUser.bind(this)}>
+              <Pressable onPress={this.onSett.bind(this)}>
                 <Ionicons
                   name="reorder-three-outline"
                   size={50}
                   color="black"
                 />
+                <Modal
+                  transparent={false}
+                  animationType="fade"
+                  visible={this.state.isVisibleSett}
+                >
+                  <Setting></Setting>
+                </Modal>
               </Pressable>
             </View>
           </View>
@@ -164,7 +193,11 @@ export class Home extends Component {
   // }
 
   onUser() {
-    Alert.alert("hehehhe");
+    this.setState({ isVisibleUser: !this.state.isVisibleUser });
+  }
+
+  onSett() {
+    this.setState({ isVisibleSett: !this.state.isVisibleSett });
   }
 
   onOrder() {
@@ -183,5 +216,9 @@ export class Home extends Component {
 
   onStatis() {
     Alert.alert("Co CLG DAU MA XEM");
+  }
+
+  changeModalVisible() {
+    Alert.alert("this is modal");
   }
 }
