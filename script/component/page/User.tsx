@@ -85,7 +85,9 @@ export class User extends Component {
         <View style={USERFORM.footUser}>
           <Pressable
             style={USERFORM.pressFoot}
-            onPress={this.onLogOut.bind(this)}
+            onPress={()=>{
+              this.onLogOut();
+            }}
           >
             <View style={USERFORM.viewPressFoot}>
               <Text style={USERFORM.textPressFoot}>Đăng Xuất</Text>
@@ -98,10 +100,10 @@ export class User extends Component {
   }
 
   onBackUser() {
-    //const props = this.props as any;
-    //props.navigation.goBack();
+    const props = this.props as any;
+    props.navigation.goBack();
   }
-  
+
   onLogOut() {
     const props = this.props as any;
     props.navigation.navigate(Login);

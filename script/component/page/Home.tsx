@@ -26,14 +26,19 @@ import { User } from "./User";
 import { Setting } from "./Setting";
 
 export class Home extends Component {
+
+  private navigation: any;
   constructor(props: any) {
     super(props);
+    // @ts-ignore
+    this.navigation = this.props.navigation;
   }
 
   state = {
     isVisibleUser: false,
     isVisibleSett: false,
   };
+
   render() {
     const Tab = createBottomTabNavigator();
 
@@ -53,14 +58,14 @@ export class Home extends Component {
                   color="black"
                 />
 
-                <Modal
-                  transparent={false}
-                  animationType="fade"
-                  visible={this.state.isVisibleUser}
-                >
-                  <User></User>
-                </Modal>
-                
+                {/*<Modal*/}
+                {/*  transparent={false}*/}
+                {/*  animationType="fade"*/}
+                {/*  visible={this.state.isVisibleUser}*/}
+                {/*>*/}
+                {/*  <User></User>*/}
+                {/*</Modal>*/}
+
               </Pressable>
 
               <View style={HOME.itemLeftTop}>
@@ -193,7 +198,8 @@ export class Home extends Component {
   // }
 
   onUser() {
-    this.setState({ isVisibleUser: !this.state.isVisibleUser });
+    // this.setState({ isVisibleUser: !this.state.isVisibleUser });
+    this.navigation.navigate(User)
   }
 
   onSett() {
@@ -201,8 +207,7 @@ export class Home extends Component {
   }
 
   onOrder() {
-    const props = this.props as any;
-    props.navigation.navigate(Order);
+    this.navigation.navigate(Order);
     Alert.alert("This is ORDER page");
   }
 
